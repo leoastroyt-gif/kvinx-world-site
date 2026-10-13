@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Inscreva-se no sorteio de participação do servidor KVINX WORLD.">
+  <title>KVINX WORLD | Sorteio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="page">
+    <header class="hero">
+      <div class="eyebrow"><span class="live-dot"></span> COMUNIDADE • MINECRAFT • DISCORD</div>
+      <h1 class="brand">KVINX <span>WORLD</span></h1>
+      <p class="subtitle">Seu próximo capítulo começa aqui.</p>
+      <div class="quick-links">
+        <a class="action-button discord" href="https://discord.gg/kXfFSs5r4" target="_blank" rel="noopener noreferrer"><span>◈</span> Discord <span class="external">↗</span></a>
+        <button class="action-button minecraft" id="minecraftBtn" type="button"><span>▦</span> Minecraft <span class="external">＋</span></button>
+      </div>
+    </header>
+
+    <section class="signup panel" id="signup">
+      <div class="section-kicker">01 / PARTICIPAÇÃO</div>
+      <h2>Entre para o <span> sorteio.</span></h2>
+      <p class="intro">Preencha as etapas abaixo para registrar seu interesse em participar da comunidade KVINX WORLD.</p>
+      <form id="signupForm" novalidate>
+        <div class="field">
+          <label for="username">Nome de usuário <span class="required">OBRIGATÓRIO</span></label>
+          <input id="username" name="username" type="text" minlength="2" maxlength="40" autocomplete="nickname" placeholder="Digite seu nome de usuário" required>
+          <small>Por enquanto, o site registra o nome informado, mas ainda não verifica se ele existe no Discord ou no Minecraft.</small>
+        </div>
+        <fieldset class="field">
+          <legend>Você tem Discord? <span class="required">OBRIGATÓRIO</span></legend>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="hasDiscord" value="yes" required><span>Sim, tenho</span></label>
+            <label class="choice"><input type="radio" name="hasDiscord" value="no"><span>Não tenho</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="field">
+          <legend>Está disposto(a) a falar? <span class="required">OBRIGATÓRIO</span></legend>
+          <p class="hint">As duas respostas são aceitas; sua escolha ficará registrada para a organização do sorteio.</p>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="willingToTalk" value="yes" required><span>Sim, estou</span></label>
+            <label class="choice"><input type="radio" name="willingToTalk" value="no"><span>Prefiro não</span></label>
+          </div>
+        </fieldset>
+        <div id="formMessage" class="message" role="status" aria-live="polite"></div>
+        <button class="submit-button" type="submit">CONFIRMAR INSCRIÇÃO <span>→</span></button>
+        <p class="privacy-note">Ao enviar, você concorda que as respostas sejam guardadas pelo responsável pelo sorteio para organização das inscrições.</p>
+      </form>
+    </section>
+    <footer><span class="footer-mark">KW</span><span>KVINX WORLD</span><span class="footer-line"></span><span>FEITO PARA A COMUNIDADE</span></footer>
+  </main>
+
+  <dialog id="ipDialog" class="ip-dialog">
+    <button class="dialog-close" id="closeDialog" aria-label="Fechar janela" type="button">×</button>
+    <div class="section-kicker">MINECRAFT / CONEXÃO</div>
+    <h2>Entre no <span>servidor.</span></h2>
+    <p class="intro">Clique abaixo para copiar o endereço do servidor.</p>
+    <button id="copyIp" class="ip-copy" type="button"><span>CLIQUE AQUI PARA COPIAR O IP DO SERVIDOR</span><strong>kvinx-world.aternos.net</strong><small id="copyStatus">CLIQUE PARA COPIAR</small></button>
+    <p class="hint">Se a cópia automática não funcionar, selecione o endereço e copie manualmente.</p>
+  </dialog>
+  <script src="/script.js"></script>
+</body>
+</html>
